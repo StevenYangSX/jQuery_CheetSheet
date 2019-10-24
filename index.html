@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>jQuery</title>
+</head>
+<body>
+    <header>
+        <h1>jQuery CheetSheet</h1>
+    </header>
+
+    <div id="container">
+        <h1 id="heading1">Heading One</h1>
+        <p id="para1">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span>Impedit quisquam beatae cum sit</span>, deserunt quia ad nemo odio? Provident dolorem, deserunt, distinctio voluptatibus iusto placeat mollitia, recusandae earum in autem omnis sapiente quos? Laudantium ullam illum earum optio suscipit eveniet!
+        </p>
+
+        <h1 class="heading2">Heading One</h1>
+        <p class="para2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <span>>quisquam beatae cum sit</span>, deserunt quia ad nemo odio? Provident dolorem, deserunt, distinctio voluptatibus iusto placeat mollitia, recusandae earum in autem omnis sapiente quos? Laudantium ullam illum earum optio suscipit eveniet!
+        </p>
+
+        <ul id="list">
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+            <li>List item</li>
+        </ul>
+
+        <input type="button" value="Button 1">
+        <input type="submit" value="submit">
+        <input type="text">
+        <br><br>
+        <a href="https://google.com">Google</a>
+        <a href="https://amazon.com">Amazon</a>
+    </div>
+    <div class="container">
+        <h1 class="heading2">jQuery Events</h4>
+            <h3>Mouse Events</h3>
+            <button id="btn1">Hide Paragraph below</button>
+            <button id="btn2">Show Paragraph below</button>
+            <button id="btn3">Toggle Paragraph</button>
+            <p class="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, iste!</p>
+        <h3 id="coords"></h3>
+        <br><br>
+
+        <form id="form">
+            <label>Name</label><br>
+            <input  class="input" type="text" id="name" name="name">
+            <br>
+            <label>Email</label><br>
+            <input class="input" type="text" id="email" name="email">
+            <br>
+            <label>Gender</label><br>
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="famale">Famale</option>
+            </select>
+            <br>
+            <input  id="submit-input" class="input" type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="domContainer">
+            <h1 class="heading2">DOM Manipulation</h4>
+            <button id="btndom">Button in Dom Manipulation</button>
+            <p id="para1dom">This is para 1.</p>
+            <p id="para2dom">This is para 2. CSS class will be toggled once button is clicked.</p>
+            
+            <div id="domInnerDiv">
+                <p></p>
+                <br>
+                <h4>>>>Use blow input to add item into list (pressing enter)</h4>
+                <input type="text" id="addItem">
+                <br>
+                <ul>
+                    <li>List item1</li>
+                    <li>List item2</li>
+                    <li>List item3</li>
+                    <li>List item4</li>
+                </ul>
+                <br><br>
+                <div>
+                <h4>This list shows users in an array by jQuery array methods</h4>
+                    <ul id="userList">
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+
+    <div class="animation">
+        <hr>
+        <h1>jQuery Animation</h1>
+        <hr>
+        <button id="btn-fade-out">Fade Out</button>
+        <button id="btn-fade-in">Fade in</button>
+        <button id="btn-fade-togg">Fade Togg</button>
+        <div id="box">
+            <h2>Test h2 tag in the box</h2>
+        </div>
+        <hr>
+
+        <button id="btn-move-left">Move Left</button>
+        <button id="btn-move-right">Move Right</button>
+        <button id="btn-move-around">Move Around</button>
+       
+        <div id="box2">
+
+        </div>
+        <br>
+    </div>
+
+    <div id="ajax">
+        <h1>AJAX</h1>
+        <h4>Load a fake JSON posts from JSON placeholder</h4>
+        <div id="posts">
+
+        </div>
+        <h4>Some fake posts here using getJSON() from JSON placeholder</h4>
+        
+        <br>
+        <ul id="users">
+        </ul>
+
+        <br>
+        <h4>Fake email address of use who commented here using ajax() from JSON placeholder</h4>
+        <ul id="comments">
+            </ul>
+    </div>
+
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
